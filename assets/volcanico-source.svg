@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#30241d"/>
+      <stop offset=".5" stop-color="#655038"/>
+      <stop offset="1" stop-color="#17110d"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#bg)"/>
+  <ellipse cx="450" cy="520" rx="260" ry="88" fill="#120f0d" opacity=".3"/>
+  <g fill="#1b1a18">
+    <ellipse cx="318" cy="396" rx="96" ry="64"/>
+    <ellipse cx="432" cy="356" rx="110" ry="70"/>
+    <ellipse cx="566" cy="406" rx="116" ry="76"/>
+  </g>
+  <g fill="#262420">
+    <ellipse cx="314" cy="390" rx="84" ry="54"/>
+    <ellipse cx="430" cy="350" rx="96" ry="60"/>
+    <ellipse cx="564" cy="398" rx="104" ry="66"/>
+  </g>
+  <text x="313" y="414" text-anchor="middle" fill="#c7a66a" font-size="86" font-family="'Playfair Display', serif">15</text>
+  <text x="430" y="368" text-anchor="middle" fill="#c7a66a" font-size="92" font-family="'Playfair Display', serif">15</text>
+  <text x="564" y="422" text-anchor="middle" fill="#c7a66a" font-size="90" font-family="'Playfair Display', serif">15</text>
+  <path d="M640 220c58 12 104 56 130 136-88 8-148-20-190-80 12-34 32-48 60-56Z" fill="#54633e"/>
+  <path d="M220 238c48 10 88 42 108 104-70 10-120-4-160-42 8-26 22-46 52-62Z" fill="#728555"/>
+</svg>

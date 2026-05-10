@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2d231c"/>
+      <stop offset=".48" stop-color="#8a5d34"/>
+      <stop offset="1" stop-color="#211812"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="700" fill="url(#bg)"/>
+  <ellipse cx="740" cy="520" rx="360" ry="92" fill="#110e0c" opacity=".25"/>
+  <rect x="450" y="286" width="430" height="160" rx="20" fill="#dfd2c0"/>
+  <rect x="474" y="310" width="382" height="112" rx="14" fill="#e9dfd0"/>
+  <path d="M506 310c70 18 144 34 228 46-14 26-22 48-22 66H474v-112Z" fill="#c6a77f"/>
+  <text x="660" y="374" fill="#8a5b30" text-anchor="middle" font-size="54" font-family="'Cinzel', serif" letter-spacing="2">MAISON</text>
+  <text x="660" y="430" fill="#8a5b30" text-anchor="middle" font-size="54" font-family="'Cinzel', serif" letter-spacing="2">LUMARA</text>
+  <g transform="translate(260 198)">
+    <rect x="0" y="54" width="120" height="214" rx="10" fill="#b98b54"/>
+    <rect x="24" y="78" width="72" height="128" rx="8" fill="#211814"/>
+    <circle cx="60" cy="134" r="26" fill="#c77b2a"/>
+    <circle cx="60" cy="134" r="22" fill="#efb260"/>
+    <path d="M60 86c10 14 12 24 0 42-12-18-10-28 0-42Z" fill="#fff0be"/>
+    <path d="M14 56h92L70 0H50Z" fill="#795736"/>
+  </g>
+  <path d="M956 310c44 12 86 40 116 92-64 10-116 2-158-28 8-32 20-50 42-64Z" fill="#5d7240"/>
+  <path d="M1044 278c40 18 76 52 98 112-72 4-126-18-160-58 6-22 24-40 62-54Z" fill="#7c9360"/>
+</svg>

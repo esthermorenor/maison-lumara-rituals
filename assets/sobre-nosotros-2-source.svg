@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b2a1d"/>
+      <stop offset=".46" stop-color="#8b6038"/>
+      <stop offset="1" stop-color="#221812"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#bg)"/>
+  <ellipse cx="460" cy="548" rx="244" ry="72" fill="#110e0c" opacity=".3"/>
+  <rect x="326" y="206" width="260" height="310" rx="36" fill="#11100e"/>
+  <rect x="356" y="230" width="200" height="260" rx="24" fill="#1f1a16"/>
+  <circle cx="456" cy="314" r="66" fill="#b76f22"/>
+  <circle cx="456" cy="314" r="60" fill="#e2a558"/>
+  <path d="M456 214c20 28 24 48 0 80-24-32-20-52 0-80Z" fill="#fff0be"/>
+  <g fill="none" stroke="#c7a66a" stroke-width="5">
+    <circle cx="456" cy="386" r="36"/>
+    <path d="M456 338v96M408 386h96M424 354c12 10 22 20 32 32 10-12 20-22 32-32M424 418c12-10 22-20 32-32 10 12 20 22 32 32"/>
+  </g>
+  <text x="456" y="456" fill="#c7a66a" text-anchor="middle" font-size="34" font-family="'Cinzel', serif" letter-spacing="2">MAISON</text>
+  <text x="456" y="492" fill="#c7a66a" text-anchor="middle" font-size="34" font-family="'Cinzel', serif" letter-spacing="2">LUMARA</text>
+  <circle cx="230" cy="450" r="34" fill="#9f876e"/>
+  <circle cx="680" cy="470" r="24" fill="#d1bba3"/>
+</svg>
