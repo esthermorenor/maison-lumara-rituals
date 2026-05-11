@@ -12,7 +12,7 @@
   --text-soft: rgba(42, 36, 30, 0.72);
   --line: rgba(199, 166, 106, 0.26);
   --line-strong: rgba(199, 166, 106, 0.42);
-  --shadow-soft: 0 20px 40px rgba(49, 35, 22, 0.08);
+  --shadow-soft: 0 18px 38px rgba(49, 35, 22, 0.055);
   --radius-sm: 4px;
   --container: 1200px;
   --section-space: 96px;
@@ -30,9 +30,14 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: 110px;
+}
+
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  font-weight: 300;
   color: var(--text);
   background: var(--ivory);
   line-height: 1.8;
@@ -60,6 +65,12 @@ button,
   margin: 0 auto;
 }
 
+main {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.46)),
+    var(--ivory);
+}
+
 .page-shell {
   overflow: clip;
 }
@@ -73,7 +84,7 @@ button,
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--olive-soft);
+  color: rgba(107, 122, 104, 0.92);
 }
 
 .eyebrow::after {
@@ -143,8 +154,8 @@ p {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  min-height: 46px;
-  padding: 13px 22px;
+  min-height: 44px;
+  padding: 12px 20px;
   border: 1px solid var(--gold);
   background: transparent;
   color: inherit;
@@ -173,7 +184,7 @@ p {
 }
 
 .button-dark {
-  border-color: rgba(247, 243, 234, 0.34);
+  border-color: rgba(247, 243, 234, 0.3);
   color: var(--ivory);
 }
 
@@ -208,7 +219,7 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  min-height: 92px;
+  min-height: 88px;
 }
 
 .brand {
@@ -218,14 +229,14 @@ p {
 }
 
 .brand img {
-  width: 248px;
+  width: 236px;
   max-width: 100%;
 }
 
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 24px;
 }
 
 .site-nav a {
@@ -338,7 +349,7 @@ p {
 .hero-inner {
   width: min(calc(100% - 48px), var(--container));
   margin: 0 auto;
-  padding: 160px 0 110px;
+  padding: 154px 0 102px;
 }
 
 .hero-copy {
@@ -368,8 +379,8 @@ p {
 
 .feature-split {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-  gap: 64px;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 70px;
   align-items: center;
 }
 
@@ -388,18 +399,20 @@ p {
   aspect-ratio: 4 / 3;
   border-radius: var(--radius-sm);
   overflow: hidden;
+  border: 1px solid rgba(199, 166, 106, 0.14);
 }
 
 .centered-heading {
   text-align: center;
   max-width: 720px;
-  margin: 0 auto 48px;
+  margin: 0 auto 54px;
 }
 
 .ritual-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 24px;
+  align-items: stretch;
 }
 
 .ritual-card {
@@ -427,28 +440,29 @@ p {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: 28px;
+  padding: 24px 22px 22px;
 }
 
 .card-subtitle {
-  margin: 12px 0 16px;
-  font-size: 11px;
+  margin: 10px 0 14px;
+  font-size: 10px;
   font-weight: 500;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.35px;
   text-transform: uppercase;
   color: var(--olive-soft);
 }
 
 .card-body p {
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.75;
 }
 
 .card-meta {
   display: flex;
   gap: 14px;
   margin-top: auto;
-  padding: 18px 0 22px;
-  font-size: 12px;
+  padding: 16px 0 18px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 1.2px;
   text-transform: uppercase;
@@ -462,7 +476,7 @@ p {
 }
 
 .grid-cta {
-  margin-top: 36px;
+  margin-top: 34px;
   text-align: center;
 }
 
@@ -475,7 +489,7 @@ p {
 }
 
 .value-card {
-  padding: 34px 28px;
+  padding: 32px 26px;
   text-align: center;
 }
 
@@ -492,26 +506,28 @@ p {
 
 .value-card h3 {
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .value-card p {
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.7;
 }
 
 .cta-panel {
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-  min-height: 420px;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  min-height: 400px;
   overflow: hidden;
   border-radius: var(--radius-sm);
+  border: 1px solid rgba(199, 166, 106, 0.12);
 }
 
 .cta-panel-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 52px;
+  padding: 52px 48px;
   background: var(--olive-dark);
   color: var(--ivory);
 }
@@ -613,7 +629,7 @@ p {
 
 .page-hero {
   position: relative;
-  min-height: 520px;
+  min-height: 450px;
   display: flex;
   align-items: end;
   color: var(--ivory);
@@ -629,7 +645,7 @@ p {
 .page-hero .container {
   position: relative;
   z-index: 2;
-  padding: 170px 0 70px;
+  padding: 156px 0 54px;
 }
 
 .breadcrumb {
@@ -650,14 +666,15 @@ p {
 
 .about-story {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-  gap: 48px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.94fr);
+  gap: 42px;
+  align-items: start;
 }
 
 .about-story-media {
   display: grid;
-  grid-template-columns: 1fr 0.86fr;
-  gap: 22px;
+  grid-template-columns: 1fr 0.82fr;
+  gap: 18px;
   align-items: start;
 }
 
@@ -665,6 +682,7 @@ p {
   margin: 0;
   overflow: hidden;
   border-radius: var(--radius-sm);
+  border: 1px solid rgba(199, 166, 106, 0.12);
 }
 
 .about-story-media figure:first-child {
@@ -673,14 +691,14 @@ p {
 
 .about-story-media figure:last-child {
   aspect-ratio: 4 / 6;
-  transform: translateY(44px);
+  transform: translateY(56px);
 }
 
 .meaning-card {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0;
-  margin-top: 36px;
+  margin-top: 34px;
   border: 1px solid rgba(199, 166, 106, 0.2);
   background: rgba(255, 255, 255, 0.45);
 }
@@ -700,7 +718,7 @@ p {
 .ritual-intro {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(340px, 0.82fr);
-  gap: 48px;
+  gap: 44px;
   align-items: start;
 }
 
@@ -708,12 +726,13 @@ p {
   aspect-ratio: 16 / 11;
   overflow: hidden;
   border-radius: var(--radius-sm);
+  border: 1px solid rgba(199, 166, 106, 0.14);
 }
 
 .ritual-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 310px;
-  gap: 40px;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 36px;
   align-items: start;
   margin-top: 48px;
 }
@@ -727,7 +746,7 @@ p {
 }
 
 .ritual-panel {
-  padding: 34px;
+  padding: 30px;
 }
 
 .ritual-bullets {
@@ -758,10 +777,12 @@ p {
 .ritual-aside {
   display: grid;
   gap: 20px;
+  position: sticky;
+  top: 112px;
 }
 
 .ritual-aside-card {
-  padding: 28px;
+  padding: 24px;
 }
 
 .ritual-stat {
@@ -783,6 +804,21 @@ p {
   border-bottom: 0;
 }
 
+.ritual-stat strong {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--olive-soft);
+}
+
+.ritual-stat span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
 .benefits-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -791,10 +827,20 @@ p {
 }
 
 .benefit-card {
-  padding: 24px;
+  padding: 22px 20px;
   border: 1px solid rgba(199, 166, 106, 0.18);
   background: rgba(255, 255, 255, 0.52);
   text-align: center;
+}
+
+.benefit-card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.benefit-card p {
+  font-size: 13px;
+  line-height: 1.7;
 }
 
 .benefit-card svg {
@@ -809,10 +855,22 @@ p {
   justify-content: space-between;
   gap: 24px;
   align-items: center;
-  padding: 28px 30px;
+  padding: 26px 28px;
   margin-top: 40px;
   background: linear-gradient(135deg, rgba(31, 42, 32, 0.98), rgba(42, 58, 42, 0.9));
   color: var(--ivory);
+}
+
+.section-divider {
+  width: min(calc(100% - 48px), var(--container));
+  height: 1px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, rgba(199, 166, 106, 0), rgba(199, 166, 106, 0.45), rgba(199, 166, 106, 0));
+}
+
+.rituals-stack {
+  display: grid;
+  gap: 0;
 }
 
 .contact-strip p {
@@ -895,6 +953,10 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .ritual-aside {
+    position: static;
+  }
+
   .ritual-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -936,7 +998,7 @@ p {
   }
 
   .hero-inner {
-    padding: 144px 0 80px;
+    padding: 136px 0 76px;
   }
 
   .header-bar {
@@ -944,7 +1006,7 @@ p {
   }
 
   .brand img {
-    width: 210px;
+    width: 198px;
   }
 
   .ritual-grid,
@@ -969,6 +1031,12 @@ p {
     padding: 28px;
   }
 
+  .feature-split,
+  .ritual-intro,
+  .about-story {
+    gap: 34px;
+  }
+
   .contact-strip,
   .footer-bottom {
     flex-direction: column;
@@ -976,10 +1044,10 @@ p {
   }
 
   .page-hero {
-    min-height: 420px;
+    min-height: 360px;
   }
 
   .page-hero .container {
-    padding: 146px 0 44px;
+    padding: 134px 0 42px;
   }
 }

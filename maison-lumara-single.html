@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison Lumara | Single Page</title>
+    <meta
+      name="description"
+      content="Maison Lumara en una sola página: home, sobre nosotros y rituales signature en un único recorrido editorial."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header is-transparent" data-header>
+        <div class="container header-bar">
+          <a class="brand" href="#inicio" aria-label="Maison Lumara">
+            <img src="assets/logo-maison-lumara.svg" alt="Maison Lumara" />
+          </a>
+          <nav class="site-nav" aria-label="Principal">
+            <a href="#inicio" aria-current="page">Inicio</a>
+            <a href="#tratamientos">Tratamientos</a>
+            <a href="#rituales">Rituales</a>
+            <a href="#sobre-nosotros">Sobre nosotros</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+          <div class="header-actions">
+            <a class="button button-dark" href="#contacto">Reserva tu momento</a>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle>
+              <span></span>
+            </button>
+          </div>
+        </div>
+        <div class="mobile-panel" data-mobile-panel>
+          <a href="#inicio">Inicio</a>
+          <a href="#tratamientos">Tratamientos</a>
+          <a href="#rituales">Rituales</a>
+          <a href="#sobre-nosotros">Sobre nosotros</a>
+          <a href="#contacto">Contacto</a>
+          <a class="button button-dark" href="#contacto">Reserva tu momento</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="inicio">
+          <div class="hero-media">
+            <img src="assets/hero.jpg" alt="Vela, aceites y elementos naturales Maison Lumara" />
+          </div>
+          <div class="hero-inner">
+            <div class="hero-content hero-copy stack-lg reveal">
+              <div class="stack-md">
+                <h1>Rituales que transforman</h1>
+                <p>Masajes y tratamientos diseñados para restaurar tu cuerpo y belleza natural.</p>
+              </div>
+              <div>
+                <a class="button" href="#contacto">Reserva tu momento</a>
+              </div>
+              <div class="hero-tagline">Where Light Becomes Calm</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-ivory" id="tratamientos">
+          <div class="container feature-split">
+            <div class="stack-lg reveal">
+              <div class="eyebrow">Bienvenido a Maison Lumara</div>
+              <div class="stack-md">
+                <h2>Un espacio de bienestar donde cada detalle est&aacute; pensado para ti</h2>
+                <p>
+                  Inspirados en antiguas tradiciones de bienestar y belleza, nuestros rituales combinan t&eacute;cnicas manuales, aceites arom&aacute;ticos y elementos naturales para ofrecerte una experiencia &uacute;nica de relajaci&oacute;n y equilibrio.
+                </p>
+              </div>
+              <div>
+                <a class="button" href="#sobre-nosotros">Conoce m&aacute;s</a>
+              </div>
+            </div>
+            <figure class="feature-split-figure reveal">
+              <img src="assets/bienestar.jpg" alt="Cabina cálida de Maison Lumara" loading="lazy" />
+            </figure>
+          </div>
+        </section>
+
+        <section class="section section-ivory" id="rituales">
+          <div class="container">
+            <div class="centered-heading reveal">
+              <div class="eyebrow" style="justify-content:center">Nuestros</div>
+              <h2>Rituales Signature</h2>
+            </div>
+
+            <div class="ritual-grid">
+              <article class="ritual-card reveal">
+                <figure class="card-figure">
+                  <img src="assets/ayurveda.jpg" alt="Ritual Ayurveda" loading="lazy" />
+                </figure>
+                <div class="card-body">
+                  <h3>Ritual Ayurveda</h3>
+                  <div class="card-subtitle">Armon&iacute;a · Energ&iacute;a · Tradici&oacute;n</div>
+                  <p>Inspirado en la sabidur&iacute;a milenaria Ayurveda, este ritual utiliza aceites arom&aacute;ticos y movimientos envolventes para equilibrar cuerpo y mente.</p>
+                  <div class="card-meta"><span>60 €</span><span>60 MIN</span></div>
+                  <a class="button" href="#ritual-ayurveda">Descubrir ritual</a>
+                </div>
+              </article>
+
+              <article class="ritual-card reveal">
+                <figure class="card-figure">
+                  <img src="assets/oceanico.jpg" alt="Ritual Oceánico" loading="lazy" />
+                </figure>
+                <div class="card-body">
+                  <h3>Ritual Oce&aacute;nico</h3>
+                  <div class="card-subtitle">Fluidez · Serenidad · Relajaci&oacute;n profunda</div>
+                  <p>Conchas marinas calientes que se deslizan sobre el cuerpo, liberando tensiones y transport&aacute;ndote a un estado de serenidad profunda.</p>
+                  <div class="card-meta"><span>60 €</span><span>60 MIN</span></div>
+                  <a class="button" href="#ritual-oceanico">Descubrir ritual</a>
+                </div>
+              </article>
+
+              <article class="ritual-card reveal">
+                <figure class="card-figure">
+                  <img src="assets/volcanico.jpg" alt="Ritual Volcánico" loading="lazy" />
+                </figure>
+                <div class="card-body">
+                  <h3>Ritual Volc&aacute;nico</h3>
+                  <div class="card-subtitle">Calor · Liberaci&oacute;n · Profundidad</div>
+                  <p>Piedras volc&aacute;nicas calientes que relajan la musculatura, mejoran la circulaci&oacute;n y liberan tensiones acumuladas.</p>
+                  <div class="card-meta"><span>60 €</span><span>60 MIN</span></div>
+                  <a class="button" href="#ritual-volcanico">Descubrir ritual</a>
+                </div>
+              </article>
+
+              <article class="ritual-card reveal">
+                <figure class="card-figure">
+                  <img src="assets/aromatico.jpg" alt="Ritual Aromático" loading="lazy" />
+                </figure>
+                <div class="card-body">
+                  <h3>Ritual Arom&aacute;tico</h3>
+                  <div class="card-subtitle">Sensorial · Ex&oacute;tico · Calma</div>
+                  <p>Pindas calientes de hierbas y especias que, junto con aceites arom&aacute;ticos, relajan el cuerpo y los sentidos en profundidad.</p>
+                  <div class="card-meta"><span>60 €</span><span>60 MIN</span></div>
+                  <a class="button" href="#ritual-aromatico">Descubrir ritual</a>
+                </div>
+              </article>
+
+              <article class="ritual-card reveal">
+                <figure class="card-figure">
+                  <img src="assets/lumara.jpg" alt="Ritual Lumara" loading="lazy" />
+                </figure>
+                <div class="card-body">
+                  <h3>Ritual Lumara</h3>
+                  <div class="card-subtitle">Equilibrio · Energ&iacute;a · Conexi&oacute;n</div>
+                  <p>Un ritual completo que combina t&eacute;cnicas exclusivas para reconectar cuerpo, mente y esp&iacute;ritu.</p>
+                  <div class="card-meta"><span>60 €</span><span>60 MIN</span></div>
+                  <a class="button" href="#ritual-lumara">Descubrir ritual</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-beige">
+          <div class="container">
+            <div class="values-grid">
+              <article class="value-card reveal">
+                <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <path d="M32 12c6 8 9 16 9 24 0 5-3 10-9 16-6-6-9-11-9-16 0-8 3-16 9-24Z"/><path d="M14 34c6-4 12-6 18-6 6 0 12 2 18 6-6 10-18 18-18 18S20 44 14 34Z"/>
+                </svg>
+                <h3>Bienestar hol&iacute;stico</h3>
+                <p>Cuerpo, mente y esp&iacute;ritu en armon&iacute;a.</p>
+              </article>
+              <article class="value-card reveal">
+                <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <path d="M18 42c0-16 10-26 28-30-2 18-12 28-28 30Z"/><path d="M20 44c8-4 16-12 24-24"/>
+                </svg>
+                <h3>Ingredientes naturales</h3>
+                <p>Utilizamos productos de la m&aacute;s alta calidad y origen natural.</p>
+              </article>
+              <article class="value-card reveal">
+                <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <circle cx="32" cy="20" r="8"/><path d="M18 50c0-8 6-14 14-14s14 6 14 14"/><path d="M12 28c4 0 8 4 8 8v8"/><path d="M52 28c-4 0-8 4-8 8v8"/>
+                </svg>
+                <h3>Rituales personalizados</h3>
+                <p>Experiencias adaptadas a tus necesidades y momento.</p>
+              </article>
+              <article class="value-card reveal">
+                <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <path d="M12 24c8 6 16 6 24 0s16-6 16 0"/><path d="M12 36c8 6 16 6 24 0s16-6 16 0"/>
+                </svg>
+                <h3>Equilibrio y armon&iacute;a</h3>
+                <p>Un espacio para desconectar y reconectar contigo.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-hero" id="sobre-nosotros">
+          <div class="page-hero-media">
+            <img src="assets/sobre-nosotros-hero.jpg" alt="Cabina spa cálida Maison Lumara" />
+          </div>
+          <div class="container page-hero-content reveal">
+            <h1>Sobre nosotros</h1>
+            <div class="breadcrumb">Maison Lumara <span>/</span> Donde la luz se convierte en calma</div>
+          </div>
+        </section>
+
+        <section class="section section-ivory">
+          <div class="container about-story">
+            <div class="stack-lg reveal">
+              <div class="eyebrow">Sobre Maison Lumara</div>
+              <h2>El bienestar no es solo una pausa, sino una transformaci&oacute;n.</h2>
+              <div class="stack-md">
+                <p>Maison Lumara nace de una idea esencial: el bienestar no es solo una pausa, sino una transformaci&oacute;n.</p>
+                <p>El nombre Lumara surge de la uni&oacute;n de dos conceptos profundamente ligados a esta visi&oacute;n. Por un lado, <em>lumen</em>, del lat&iacute;n, que significa luz; por otro, <em>ara</em>, que hace referencia a un altar, un espacio de conexi&oacute;n y recogimiento. Juntos, evocan un lugar donde la luz se convierte en ritual, y donde el cuidado del cuerpo trasciende lo f&iacute;sico para convertirse en una experiencia consciente.</p>
+                <p>En Maison Lumara entendemos el bienestar como un proceso natural de equilibrio. Cada ritual est&aacute; dise&ntilde;ado para acompa&ntilde;ar al cuerpo y a la mente hacia un estado de calma profunda, respetando su ritmo y escuchando sus necesidades. No se trata &uacute;nicamente de relajar, sino de transformar: liberar tensiones, restaurar la energ&iacute;a y crear un espacio donde todo vuelve a su centro.</p>
+                <p>Inspirados en tradiciones ancestrales y reinterpretados con una sensibilidad contempor&aacute;nea, nuestros rituales combinan t&eacute;cnicas manuales, aceites arom&aacute;ticos y elementos naturales para ofrecer experiencias que envuelven los sentidos y generan un bienestar duradero.</p>
+                <p>Maison Lumara es, en esencia, un lugar &iacute;ntimo donde el tiempo se detiene. Un espacio donde la luz se convierte en calma, y donde cada detalle est&aacute; pensado para reconectar contigo.</p>
+              </div>
+
+              <div class="meaning-card reveal">
+                <article>
+                  <div class="eyebrow">El significado de Lumara</div>
+                  <h3>Lumen</h3>
+                  <p>Significa luz. Representa claridad, energ&iacute;a y presencia consciente.</p>
+                </article>
+                <article>
+                  <div class="eyebrow">Origen</div>
+                  <h3>Ara</h3>
+                  <p>Significa altar. Representa un espacio sagrado de conexi&oacute;n y recogimiento.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="about-story-media reveal">
+              <figure>
+                <img src="assets/sobre-nosotros-1.jpg" alt="Ambiente cálido Maison Lumara" loading="lazy" />
+              </figure>
+              <figure>
+                <img src="assets/sobre-nosotros-2.jpg" alt="Vela editorial Maison Lumara" loading="lazy" />
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <div class="rituals-stack">
+          <section class="section section-ivory" id="ritual-ayurveda">
+            <div class="container">
+              <div class="ritual-intro">
+                <div class="stack-lg reveal">
+                  <div class="eyebrow">Ritual Ayurveda</div>
+                  <div class="stack-md">
+                    <h2>Armon&iacute;a · Energ&iacute;a · Tradici&oacute;n</h2>
+                    <p>Inspirado en la sabidur&iacute;a milenaria Ayurveda, este ritual utiliza aceites arom&aacute;ticos y movimientos envolventes para equilibrar el cuerpo y la mente.</p>
+                    <p>Las t&eacute;cnicas aplicadas ayudan a liberar tensiones, reducir el estr&eacute;s y favorecer la circulaci&oacute;n energ&eacute;tica, generando una sensaci&oacute;n de bienestar integral. Incluye un delicado ritual inicial de pies con aceites esenciales.</p>
+                  </div>
+                </div>
+                <figure class="ritual-intro-media reveal">
+                  <img src="assets/ayurveda.jpg" alt="Aceite Ayurveda Maison Lumara" loading="lazy" />
+                </figure>
+              </div>
+              <div class="ritual-layout">
+                <div class="stack-lg">
+                  <section class="ritual-panel reveal">
+                    <div class="eyebrow">Qu&eacute; incluye</div>
+                    <ul class="ritual-bullets">
+                      <li>Ritual inicial de pies con aceites esenciales</li>
+                      <li>Masaje envolvente de inspiraci&oacute;n Ayurveda</li>
+                      <li>Trabajo suave sobre tensi&oacute;n y circulaci&oacute;n energ&eacute;tica</li>
+                      <li>Cierre arom&aacute;tico para prolongar la sensaci&oacute;n de calma</li>
+                    </ul>
+                  </section>
+                  <section class="reveal">
+                    <div class="eyebrow">Beneficios</div>
+                    <div class="benefits-grid">
+                      <article class="benefit-card"><h3>Armoniza</h3><p>Equilibra cuerpo y mente.</p></article>
+                      <article class="benefit-card"><h3>Relaja</h3><p>Reduce estr&eacute;s y tensi&oacute;n.</p></article>
+                      <article class="benefit-card"><h3>Activa</h3><p>Favorece la circulaci&oacute;n.</p></article>
+                      <article class="benefit-card"><h3>Centra</h3><p>Aporta bienestar integral.</p></article>
+                    </div>
+                  </section>
+                </div>
+                <aside class="ritual-aside reveal">
+                  <div class="ritual-aside-card">
+                    <div class="ritual-stat">
+                      <article><strong>Duraci&oacute;n</strong><span>60 minutos</span></article>
+                      <article><strong>Precio</strong><span>60 €</span></article>
+                    </div>
+                  </div>
+                  <div class="ritual-aside-card">
+                    <div class="stack-md">
+                      <h3>Reservar este ritual</h3>
+                      <p>Agenda tu experiencia Maison Lumara por email.</p>
+                      <a class="button button-solid" href="mailto:maisonlumara@gmail.com">Reservar este ritual</a>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </section>
+
+          <div class="section-divider"></div>
+
+          <section class="section section-ivory" id="ritual-oceanico">
+            <div class="container">
+              <div class="ritual-intro">
+                <div class="stack-lg reveal">
+                  <div class="eyebrow">Ritual Oce&aacute;nico</div>
+                  <div class="stack-md">
+                    <h2>Fluidez · Serenidad · Relajaci&oacute;n profunda</h2>
+                    <p>Un tratamiento sensorial inspirado en la calma del oc&eacute;ano. Las conchas marinas calientes se deslizan suavemente sobre el cuerpo, recreando el ritmo natural de las olas mientras liberan tensiones y relajan la musculatura.</p>
+                    <p>Acompa&ntilde;ado de aceites de inspiraci&oacute;n marina, este ritual envuelve los sentidos y transporta a un estado de serenidad profunda.</p>
+                  </div>
+                </div>
+                <figure class="ritual-intro-media reveal">
+                  <img src="assets/oceanico.jpg" alt="Conchas cálidas en Ritual Oceánico" loading="lazy" />
+                </figure>
+              </div>
+              <div class="ritual-layout">
+                <div class="stack-lg">
+                  <section class="ritual-panel reveal">
+                    <div class="eyebrow">Qu&eacute; incluye</div>
+                    <ul class="ritual-bullets">
+                      <li>Bienvenida con aroma suave de inspiraci&oacute;n marina</li>
+                      <li>Trabajo corporal con conchas calientes</li>
+                      <li>Deslizamientos largos para soltar tensi&oacute;n acumulada</li>
+                      <li>Cierre calmante para prolongar la sensaci&oacute;n de fluidez</li>
+                    </ul>
+                  </section>
+                  <section class="reveal">
+                    <div class="eyebrow">Beneficios</div>
+                    <div class="benefits-grid">
+                      <article class="benefit-card"><h3>Suaviza</h3><p>Relaja la musculatura en profundidad.</p></article>
+                      <article class="benefit-card"><h3>Serena</h3><p>Invita a un estado de quietud interior.</p></article>
+                      <article class="benefit-card"><h3>Envuelve</h3><p>Estimula los sentidos con una calidez delicada.</p></article>
+                      <article class="benefit-card"><h3>Libera</h3><p>Disuelve tensi&oacute;n f&iacute;sica y mental.</p></article>
+                    </div>
+                  </section>
+                </div>
+                <aside class="ritual-aside reveal">
+                  <div class="ritual-aside-card">
+                    <div class="ritual-stat">
+                      <article><strong>Duraci&oacute;n</strong><span>60 minutos</span></article>
+                      <article><strong>Precio</strong><span>60 €</span></article>
+                    </div>
+                  </div>
+                  <div class="ritual-aside-card">
+                    <div class="stack-md">
+                      <h3>Reservar este ritual</h3>
+                      <p>Agenda tu experiencia Maison Lumara por email.</p>
+                      <a class="button button-solid" href="mailto:maisonlumara@gmail.com">Reservar este ritual</a>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </section>
+
+          <div class="section-divider"></div>
+
+          <section class="section section-ivory" id="ritual-volcanico">
+            <div class="container">
+              <div class="ritual-intro">
+                <div class="stack-lg reveal">
+                  <div class="eyebrow">Ritual Volc&aacute;nico</div>
+                  <div class="stack-md">
+                    <h2>Calor · Liberaci&oacute;n · Profundidad</h2>
+                    <p>Un ritual profundamente relajante que combina el poder terap&eacute;utico de las piedras volc&aacute;nicas calientes con aceites arom&aacute;ticos de inspiraci&oacute;n oriental.</p>
+                    <p>Las piedras, aplicadas estrat&eacute;gicamente, transmiten un calor envolvente que penetra en los tejidos, ayudando a relajar la musculatura, mejorar la circulaci&oacute;n y liberar tensiones acumuladas. Una experiencia reconfortante que restaura el equilibrio f&iacute;sico y mental.</p>
+                  </div>
+                </div>
+                <figure class="ritual-intro-media reveal">
+                  <img src="assets/volcanico.jpg" alt="Piedras calientes Ritual Volcánico" loading="lazy" />
+                </figure>
+              </div>
+              <div class="ritual-layout">
+                <div class="stack-lg">
+                  <section class="ritual-panel reveal">
+                    <div class="eyebrow">Qu&eacute; incluye</div>
+                    <ul class="ritual-bullets">
+                      <li>Preparaci&oacute;n arom&aacute;tica previa al masaje</li>
+                      <li>Aplicaci&oacute;n de piedras volc&aacute;nicas calientes</li>
+                      <li>Trabajo profundo en zonas de mayor tensi&oacute;n</li>
+                      <li>Cierre reconfortante para prolongar el descanso corporal</li>
+                    </ul>
+                  </section>
+                  <section class="reveal">
+                    <div class="eyebrow">Beneficios</div>
+                    <div class="benefits-grid">
+                      <article class="benefit-card"><h3>Calma</h3><p>Relaja la musculatura en profundidad.</p></article>
+                      <article class="benefit-card"><h3>Mejora</h3><p>Favorece la circulaci&oacute;n y la soltura corporal.</p></article>
+                      <article class="benefit-card"><h3>Alivia</h3><p>Disminuye la tensi&oacute;n acumulada.</p></article>
+                      <article class="benefit-card"><h3>Reconforta</h3><p>Devuelve sensaci&oacute;n de abrigo y equilibrio.</p></article>
+                    </div>
+                  </section>
+                </div>
+                <aside class="ritual-aside reveal">
+                  <div class="ritual-aside-card">
+                    <div class="ritual-stat">
+                      <article><strong>Duraci&oacute;n</strong><span>60 minutos</span></article>
+                      <article><strong>Precio</strong><span>60 €</span></article>
+                    </div>
+                  </div>
+                  <div class="ritual-aside-card">
+                    <div class="stack-md">
+                      <h3>Reservar este ritual</h3>
+                      <p>Agenda tu experiencia Maison Lumara por email.</p>
+                      <a class="button button-solid" href="mailto:maisonlumara@gmail.com">Reservar este ritual</a>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </section>
+
+          <div class="section-divider"></div>
+
+          <section class="section section-ivory" id="ritual-aromatico">
+            <div class="container">
+              <div class="ritual-intro">
+                <div class="stack-lg reveal">
+                  <div class="eyebrow">Ritual Arom&aacute;tico</div>
+                  <div class="stack-md">
+                    <h2>Sensorial · Ex&oacute;tico · Calma</h2>
+                    <p>Un ritual inspirado en las tradiciones orientales que combina pindas calientes de hierbas y especias con aceites arom&aacute;ticos cuidadosamente seleccionados.</p>
+                    <p>El calor de las pindas libera fragancias envolventes que act&uacute;an sobre los sentidos, mientras los movimientos suaves y continuos relajan el cuerpo y disipan la tensi&oacute;n acumulada. Una experiencia profundamente sensorial que invita a desconectar y sumergirse en un estado de calma absoluta.</p>
+                  </div>
+                </div>
+                <figure class="ritual-intro-media reveal">
+                  <img src="assets/aromatico.jpg" alt="Pindas aromáticas Maison Lumara" loading="lazy" />
+                </figure>
+              </div>
+              <div class="ritual-layout">
+                <div class="stack-lg">
+                  <section class="ritual-panel reveal">
+                    <div class="eyebrow">Qu&eacute; incluye</div>
+                    <ul class="ritual-bullets">
+                      <li>Bienvenida arom&aacute;tica seg&uacute;n el estado del momento</li>
+                      <li>Masaje con pindas calientes de hierbas y especias</li>
+                      <li>Aplicaci&oacute;n de aceites arom&aacute;ticos seleccionados</li>
+                      <li>Cierre sensorial para prolongar la calma</li>
+                    </ul>
+                  </section>
+                  <section class="reveal">
+                    <div class="eyebrow">Beneficios</div>
+                    <div class="benefits-grid">
+                      <article class="benefit-card"><h3>Calma</h3><p>Suaviza cuerpo y respiraci&oacute;n.</p></article>
+                      <article class="benefit-card"><h3>Envuelve</h3><p>Activa los sentidos con calor y aroma.</p></article>
+                      <article class="benefit-card"><h3>Libera</h3><p>Disminuye tensi&oacute;n acumulada.</p></article>
+                      <article class="benefit-card"><h3>Desconecta</h3><p>Invita a una pausa profundamente sensorial.</p></article>
+                    </div>
+                  </section>
+                </div>
+                <aside class="ritual-aside reveal">
+                  <div class="ritual-aside-card">
+                    <div class="ritual-stat">
+                      <article><strong>Duraci&oacute;n</strong><span>60 minutos</span></article>
+                      <article><strong>Precio</strong><span>60 €</span></article>
+                    </div>
+                  </div>
+                  <div class="ritual-aside-card">
+                    <div class="stack-md">
+                      <h3>Reservar este ritual</h3>
+                      <p>Agenda tu experiencia Maison Lumara por email.</p>
+                      <a class="button button-solid" href="mailto:maisonlumara@gmail.com">Reservar este ritual</a>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </section>
+
+          <div class="section-divider"></div>
+
+          <section class="section section-ivory" id="ritual-lumara">
+            <div class="container">
+              <div class="ritual-intro">
+                <div class="stack-lg reveal">
+                  <div class="eyebrow">Ritual Lumara Signature</div>
+                  <div class="stack-md">
+                    <h2>Equilibrio · Energ&iacute;a · Conexi&oacute;n</h2>
+                    <p>Un ritual completo que representa la esencia de Maison Lumara. Combina t&eacute;cnicas manuales, piedras calientes y elementos arom&aacute;ticos para armonizar cuerpo, mente y energ&iacute;a en una experiencia profundamente restauradora.</p>
+                    <p>Un viaje sensorial dise&ntilde;ado para reconectar con el equilibrio natural y alcanzar un estado de calma profunda.</p>
+                  </div>
+                </div>
+                <figure class="ritual-intro-media reveal">
+                  <img src="assets/lumara.jpg" alt="Experiencia Ritual Lumara" loading="lazy" />
+                </figure>
+              </div>
+              <div class="ritual-layout">
+                <div class="stack-lg">
+                  <section class="ritual-panel reveal">
+                    <div class="eyebrow">Qu&eacute; incluye</div>
+                    <ul class="ritual-bullets">
+                      <li>Bienvenida y diagn&oacute;stico personalizado</li>
+                      <li>Masaje relajante con aceites arom&aacute;ticos</li>
+                      <li>Piedras calientes para liberar tensiones profundas</li>
+                      <li>T&eacute;cnicas manuales exclusivas Maison Lumara</li>
+                      <li>Ritual de armonizaci&oacute;n final</li>
+                    </ul>
+                  </section>
+                  <section class="reveal">
+                    <div class="eyebrow">Beneficios</div>
+                    <div class="benefits-grid">
+                      <article class="benefit-card"><h3>Equilibrio</h3><p>Armoniza cuerpo, mente y energ&iacute;a.</p></article>
+                      <article class="benefit-card"><h3>Energ&iacute;a</h3><p>Restaura vitalidad y bienestar.</p></article>
+                      <article class="benefit-card"><h3>Conexi&oacute;n</h3><p>Reconecta contigo misma en profundidad.</p></article>
+                      <article class="benefit-card"><h3>Armon&iacute;a</h3><p>Profunda sensaci&oacute;n de calma y paz.</p></article>
+                    </div>
+                  </section>
+                </div>
+                <aside class="ritual-aside reveal">
+                  <div class="ritual-aside-card">
+                    <div class="ritual-stat">
+                      <article><strong>Duraci&oacute;n</strong><span>60 minutos</span></article>
+                      <article><strong>Precio</strong><span>60 €</span></article>
+                    </div>
+                  </div>
+                  <div class="ritual-aside-card">
+                    <div class="stack-md">
+                      <h3>Reservar este ritual</h3>
+                      <p>Escr&iacute;benos y prepararemos tu experiencia Maison Lumara.</p>
+                      <a class="button button-solid" href="mailto:maisonlumara@gmail.com">Reservar este ritual</a>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="section section-ivory" id="contacto">
+          <div class="container">
+            <div class="cta-panel reveal">
+              <div class="cta-panel-copy stack-lg">
+                <div class="stack-md">
+                  <div class="eyebrow">Maison Lumara</div>
+                  <h2>Tu momento de calma empieza aqu&iacute;</h2>
+                  <p>Reserva tu ritual y d&eacute;jate guiar por la luz hacia el bienestar.</p>
+                </div>
+                <div>
+                  <a class="button button-dark" href="mailto:maisonlumara@gmail.com">Reserva tu momento</a>
+                </div>
+              </div>
+              <figure class="cta-panel-image">
+                <img src="assets/cta-footer.jpg" alt="Linterna y toalla Maison Lumara" loading="lazy" />
+              </figure>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <img class="footer-logo" src="assets/logo-maison-lumara.svg" alt="Maison Lumara" />
+              <p>Rituals of Wellness</p>
+              <p>Where Light Becomes Calm</p>
+              <div class="socials" aria-label="Redes sociales">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Pinterest">PI</a>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h3>Navegaci&oacute;n</h3>
+              <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#tratamientos">Tratamientos</a>
+                <a href="#rituales">Rituales</a>
+                <a href="#sobre-nosotros">Sobre nosotros</a>
+                <a href="#contacto">Contacto</a>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h3>Rituales</h3>
+              <div class="footer-links">
+                <a href="#ritual-ayurveda">Ritual Ayurveda</a>
+                <a href="#ritual-oceanico">Ritual Oce&aacute;nico</a>
+                <a href="#ritual-volcanico">Ritual Volc&aacute;nico</a>
+                <a href="#ritual-aromatico">Ritual Arom&aacute;tico</a>
+                <a href="#ritual-lumara">Ritual Lumara</a>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h3>Contacto</h3>
+              <div class="footer-meta">
+                <p>+34 600 123 456</p>
+                <p>maisonlumara@gmail.com</p>
+                <p>www.maisonlumara.com</p>
+                <p>Richmond</p>
+                <p>Lunes a Domingo 10:00 – 20:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <span>&copy; 2026 Maison Lumara. Todos los derechos reservados.</span>
+            <div class="footer-bottom-links">
+              <a href="#">Pol&iacute;tica de privacidad</a>
+              <a href="#">Aviso legal</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
