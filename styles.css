@@ -218,8 +218,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  min-height: 88px;
+  gap: 22px;
+  min-height: 86px;
 }
 
 .brand {
@@ -229,21 +229,21 @@ p {
 }
 
 .brand img {
-  width: 236px;
+  width: 232px;
   max-width: 100%;
 }
 
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 22px;
 }
 
 .site-nav a {
   position: relative;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.35px;
   text-transform: uppercase;
   color: var(--ivory);
 }
@@ -312,7 +312,7 @@ p {
 
 .hero {
   position: relative;
-  min-height: 744px;
+  min-height: 736px;
   display: flex;
   align-items: center;
   color: var(--ivory);
@@ -349,24 +349,24 @@ p {
 .hero-inner {
   width: min(calc(100% - 48px), var(--container));
   margin: 0 auto;
-  padding: 148px 0 94px;
+  padding: 146px 0 90px;
 }
 
 .hero-copy {
-  max-width: 465px;
+  max-width: 452px;
 }
 
 .hero-copy h1 {
-  max-width: 440px;
+  max-width: 426px;
   text-transform: uppercase;
-  font-size: clamp(34px, 5.4vw, 61px);
+  font-size: clamp(34px, 5.25vw, 59px);
   letter-spacing: -0.03em;
 }
 
 .hero-copy p {
-  max-width: 360px;
-  font-size: 17px;
-  line-height: 1.82;
+  max-width: 344px;
+  font-size: 16px;
+  line-height: 1.86;
   color: rgba(247, 243, 234, 0.82);
 }
 
@@ -374,10 +374,10 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  margin-top: 28px;
-  font-size: 12px;
+  margin-top: 24px;
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
   text-transform: uppercase;
   color: var(--gold);
 }
@@ -413,8 +413,8 @@ p {
 }
 
 #tratamientos.section {
-  padding-top: 54px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 56px;
 }
 
 #tratamientos .eyebrow {
@@ -435,7 +435,7 @@ p {
 .centered-heading {
   text-align: center;
   max-width: 720px;
-  margin: 0 auto 46px;
+  margin: 0 auto 42px;
   position: relative;
 }
 
@@ -455,13 +455,13 @@ p {
 .ritual-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 18px;
+  gap: 16px;
   align-items: stretch;
 }
 
 #rituales.section {
-  padding-top: 28px;
-  padding-bottom: 44px;
+  padding-top: 24px;
+  padding-bottom: 40px;
 }
 
 .ritual-card {
@@ -498,13 +498,13 @@ p {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: 18px 14px 14px;
+  padding: 17px 13px 13px;
 }
 
 .ritual-card h3 {
   font-family: "Cinzel", serif;
-  font-size: 14px;
-  line-height: 1.42;
+  font-size: 13px;
+  line-height: 1.38;
   letter-spacing: 0.01em;
   text-transform: uppercase;
 }
@@ -519,8 +519,8 @@ p {
 }
 
 .card-body p {
-  font-size: 11px;
-  line-height: 1.8;
+  font-size: 10.5px;
+  line-height: 1.78;
 }
 
 .card-meta {
@@ -542,7 +542,7 @@ p {
 }
 
 .grid-cta {
-  margin-top: 22px;
+  margin-top: 18px;
   text-align: center;
 }
 
@@ -565,8 +565,8 @@ p {
 }
 
 .section-beige {
-  padding-top: 30px;
-  padding-bottom: 32px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 #contacto.section {
@@ -607,7 +607,7 @@ p {
 .cta-panel {
   display: grid;
   grid-template-columns: minmax(0, 0.68fr) minmax(0, 1.32fr);
-  min-height: 264px;
+  min-height: 252px;
   overflow: hidden;
   border-radius: var(--radius-sm);
   border: 1px solid rgba(199, 166, 106, 0.12);
@@ -617,7 +617,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 34px 30px;
+  padding: 30px 28px;
   background: var(--olive-dark);
   color: var(--ivory);
 }
@@ -627,18 +627,18 @@ p {
 }
 
 .cta-panel-copy h2 {
-  max-width: 320px;
-  font-size: clamp(30px, 3vw, 42px);
+  max-width: 300px;
+  font-size: clamp(28px, 2.85vw, 40px);
 }
 
 .cta-panel-copy p {
-  max-width: 280px;
-  font-size: 14px;
+  max-width: 270px;
+  font-size: 13px;
 }
 
 .cta-panel-image {
   position: relative;
-  min-height: 264px;
+  min-height: 252px;
 }
 
 .cta-panel-image::after {
@@ -656,8 +656,8 @@ p {
 .footer-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.82fr 0.9fr 1fr;
-  gap: 28px;
-  padding: 40px 0 20px;
+  gap: 24px;
+  padding: 34px 0 16px;
 }
 
 .footer-brand p,
@@ -685,14 +685,14 @@ p {
 }
 
 .footer-logo {
-  width: 208px;
-  margin-bottom: 14px;
+  width: 202px;
+  margin-bottom: 12px;
 }
 
 .socials {
   display: flex;
   gap: 10px;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .socials a {
@@ -717,7 +717,7 @@ p {
   justify-content: space-between;
   gap: 18px;
   align-items: center;
-  padding: 18px 0 22px;
+  padding: 14px 0 18px;
   border-top: 1px solid rgba(199, 166, 106, 0.25);
   color: rgba(232, 224, 209, 0.68);
   font-size: 12px;
@@ -730,7 +730,7 @@ p {
 
 .page-hero {
   position: relative;
-  min-height: 392px;
+  min-height: 384px;
   display: flex;
   align-items: end;
   color: var(--ivory);
@@ -746,7 +746,7 @@ p {
 .page-hero .container {
   position: relative;
   z-index: 2;
-  padding: 144px 0 42px;
+  padding: 140px 0 38px;
 }
 
 .page-hero h1 {
@@ -774,13 +774,13 @@ p {
 .about-story {
   display: grid;
   grid-template-columns: minmax(0, 0.98fr) minmax(0, 1.02fr);
-  gap: 30px;
+  gap: 28px;
   align-items: start;
 }
 
 #sobre-nosotros + .section {
-  padding-top: 18px;
-  padding-bottom: 58px;
+  padding-top: 14px;
+  padding-bottom: 54px;
 }
 
 .about-story > .stack-lg > h2 {
@@ -831,7 +831,7 @@ p {
 }
 
 .meaning-card article {
-  padding: 18px 20px 20px;
+  padding: 17px 18px 18px;
   text-align: center;
 }
 
@@ -1038,8 +1038,8 @@ p {
 }
 
 .rituals-stack > .section {
-  padding-top: 52px;
-  padding-bottom: 54px;
+  padding-top: 48px;
+  padding-bottom: 50px;
 }
 
 #ritual-lumara.section {
