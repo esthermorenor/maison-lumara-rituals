@@ -613,6 +613,7 @@ p {
   display: grid;
   grid-template-columns: 40% 60%;
   min-height: 332px;
+  height: 332px;
   overflow: hidden;
   border-radius: var(--radius-sm);
   border: 1px solid rgba(199, 166, 106, 0.12);
@@ -643,6 +644,7 @@ p {
 
 .cta-panel-image {
   position: relative;
+  height: 332px;
   min-height: 332px;
   overflow: hidden;
 }
@@ -658,7 +660,8 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.22);
+  pointer-events: none;
 }
 
 .site-footer {
@@ -1159,6 +1162,16 @@ p {
 
   .ritual-aside {
     position: static;
+  }
+
+  .cta-panel {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .cta-panel-image {
+    height: 280px;
+    min-height: 280px;
   }
 
   .ritual-grid {
