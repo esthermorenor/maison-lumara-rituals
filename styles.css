@@ -412,6 +412,13 @@ p {
   border: 1px solid rgba(199, 166, 106, 0.14);
 }
 
+.feature-split-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
 #tratamientos.section {
   padding-top: 50px;
   padding-bottom: 56px;
@@ -699,6 +706,7 @@ p {
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  display: block;
 }
 
 .cta-panel-image::after {
@@ -839,8 +847,8 @@ p {
   margin: 0 auto;
   padding: 96px 24px 72px;
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.65fr);
-  gap: 64px;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.65fr);
+  gap: 56px;
   align-items: start;
 }
 
@@ -849,17 +857,17 @@ p {
 }
 
 .about-copy {
-  max-width: 620px;
+  max-width: 640px;
 }
 
 .about-copy > h2 {
-  max-width: 620px;
+  max-width: 640px;
   font-size: clamp(31px, 3.5vw, 47px);
   line-height: 1.18;
 }
 
 .about-copy .stack-md {
-  max-width: 620px;
+  max-width: 640px;
 }
 
 .about-copy .stack-md p {
@@ -876,23 +884,17 @@ p {
 .about-images figure {
   margin: 0;
   overflow: hidden;
-  border-radius: var(--radius-sm);
-  border: 1px solid rgba(199, 166, 106, 0.12);
-}
-
-.about-story-media figure:not(:last-child),
-.about-images figure:not(:last-child),
-.about-images img:not(:last-child) {
-  display: none;
+  border: 1px solid rgba(199, 166, 106, 0.14);
+  border-radius: 4px;
+  aspect-ratio: 4 / 5.6;
 }
 
 .about-story-media img,
 .about-images img {
   width: 100%;
-  aspect-ratio: 3 / 4;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-  display: block;
+  object-position: center center;
 }
 
 .meaning-card {
@@ -1375,7 +1377,7 @@ p {
 
   .about-story-media img,
   .about-images img {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 5;
   }
 
   .page-hero {
