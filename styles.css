@@ -486,6 +486,11 @@ p {
 }
 
 .card-figure img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center center;
   transition: transform 500ms ease;
 }
 
@@ -570,7 +575,7 @@ p {
 }
 
 #contacto.section {
-  padding-top: 10px;
+  padding-top: 14px;
   padding-bottom: 0;
 }
 
@@ -606,8 +611,8 @@ p {
 
 .cta-panel {
   display: grid;
-  grid-template-columns: minmax(0, 0.68fr) minmax(0, 1.32fr);
-  min-height: 252px;
+  grid-template-columns: 40% 60%;
+  min-height: 332px;
   overflow: hidden;
   border-radius: var(--radius-sm);
   border: 1px solid rgba(199, 166, 106, 0.12);
@@ -617,7 +622,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 30px 28px;
+  padding: 42px 34px;
   background: var(--olive-dark);
   color: var(--ivory);
 }
@@ -627,18 +632,26 @@ p {
 }
 
 .cta-panel-copy h2 {
-  max-width: 300px;
-  font-size: clamp(28px, 2.85vw, 40px);
+  max-width: 320px;
+  font-size: clamp(30px, 2.95vw, 42px);
 }
 
 .cta-panel-copy p {
-  max-width: 270px;
-  font-size: 13px;
+  max-width: 292px;
+  font-size: 14px;
 }
 
 .cta-panel-image {
   position: relative;
-  min-height: 252px;
+  min-height: 332px;
+  overflow: hidden;
+}
+
+.cta-panel-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .cta-panel-image::after {
