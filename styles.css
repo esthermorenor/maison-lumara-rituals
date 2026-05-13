@@ -833,54 +833,66 @@ p {
   opacity: 0.6;
 }
 
-.about-story {
+.about-story,
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 96px 24px 72px;
   display: grid;
-  grid-template-columns: minmax(0, 0.98fr) minmax(0, 1.02fr);
-  gap: 28px;
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.65fr);
+  gap: 64px;
   align-items: start;
 }
 
 #sobre-nosotros + .section {
-  padding-top: 14px;
-  padding-bottom: 54px;
+  padding: 0 0 54px;
 }
 
-.about-story > .stack-lg > h2 {
-  max-width: 540px;
+.about-copy {
+  max-width: 620px;
+}
+
+.about-copy > h2 {
+  max-width: 620px;
   font-size: clamp(31px, 3.5vw, 47px);
   line-height: 1.18;
 }
 
-.about-story > .stack-lg .stack-md {
-  max-width: 560px;
+.about-copy .stack-md {
+  max-width: 620px;
 }
 
-.about-story > .stack-lg .stack-md p {
+.about-copy .stack-md p {
   font-size: 14px;
   line-height: 1.95;
 }
 
-.about-story-media {
-  display: grid;
-  grid-template-columns: 1fr 0.78fr;
-  gap: 14px;
-  align-items: start;
+.about-story-media,
+.about-images {
+  display: block;
 }
 
-.about-story-media figure {
+.about-story-media figure,
+.about-images figure {
   margin: 0;
   overflow: hidden;
   border-radius: var(--radius-sm);
   border: 1px solid rgba(199, 166, 106, 0.12);
 }
 
-.about-story-media figure:first-child {
-  aspect-ratio: 4 / 4.9;
+.about-story-media figure:not(:last-child),
+.about-images figure:not(:last-child),
+.about-images img:not(:last-child) {
+  display: none;
 }
 
-.about-story-media figure:last-child {
-  aspect-ratio: 4 / 5.8;
-  transform: translateY(40px);
+.about-story-media img,
+.about-images img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 .meaning-card {
@@ -909,6 +921,16 @@ p {
 .meaning-card p {
   font-size: 14px;
   line-height: 1.82;
+}
+
+.about-meaning {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about-actions {
+  margin-top: 30px;
+  text-align: center;
 }
 
 .ritual-intro {
@@ -1201,6 +1223,7 @@ p {
   .feature-split,
   .cta-panel,
   .about-story,
+  .about-content,
   .ritual-intro,
   .ritual-layout {
     grid-template-columns: 1fr;
@@ -1252,12 +1275,10 @@ p {
     border-left: 0;
   }
 
-  .about-story-media {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .about-story-media figure:last-child {
-    transform: none;
+  .about-story,
+  .about-content {
+    gap: 40px;
+    padding: 64px 20px;
   }
 }
 
@@ -1311,7 +1332,8 @@ p {
 
   .feature-split,
   .ritual-intro,
-  .about-story {
+  .about-story,
+  .about-content {
     gap: 34px;
   }
 
@@ -1345,6 +1367,15 @@ p {
   .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .about-copy {
+    max-width: none;
+  }
+
+  .about-story-media img,
+  .about-images img {
+    aspect-ratio: 4 / 3;
   }
 
   .page-hero {
