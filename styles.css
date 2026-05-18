@@ -14,7 +14,7 @@
   --line-strong: rgba(199, 166, 106, 0.42);
   --shadow-soft: 0 18px 38px rgba(49, 35, 22, 0.055);
   --radius-sm: 4px;
-  --container: 1200px;
+  --container: 1440px;
   --section-space: 96px;
   --section-space-mobile: 64px;
   --transition: 250ms ease;
@@ -37,10 +37,11 @@ section[id] {
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  color: var(--text);
+  font-size: 19px;
+  line-height: 1.82;
+  font-weight: 400;
+  color: rgba(42, 36, 30, 0.88);
   background: var(--ivory);
-  line-height: 1.8;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -80,7 +81,7 @@ main {
   align-items: center;
   gap: 12px;
   margin: 0 0 20px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -134,7 +135,10 @@ h3 {
 
 p {
   margin: 0;
-  color: var(--text-soft);
+  font-size: 20px;
+  line-height: 1.85;
+  font-weight: 400;
+  color: rgba(42, 36, 30, 0.9);
 }
 
 .stack-lg > * + * {
@@ -159,7 +163,7 @@ p {
   border: 1px solid var(--gold);
   background: transparent;
   color: inherit;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -229,7 +233,7 @@ p {
 }
 
 .brand img {
-  width: 232px;
+  width: 280px;
   max-width: 100%;
 }
 
@@ -241,9 +245,9 @@ p {
 
 .site-nav a {
   position: relative;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: 1.35px;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
   color: var(--ivory);
 }
@@ -270,6 +274,12 @@ p {
   display: flex;
   align-items: center;
   gap: 18px;
+}
+
+.header-actions .button {
+  font-size: 14px;
+  min-height: 46px;
+  padding: 13px 24px;
 }
 
 .menu-toggle {
@@ -312,7 +322,8 @@ p {
 
 .hero {
   position: relative;
-  min-height: 736px;
+  min-height: 560px;
+  max-height: 620px;
   display: flex;
   align-items: center;
   color: var(--ivory);
@@ -338,6 +349,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
 
 .hero-content,
@@ -349,24 +361,25 @@ p {
 .hero-inner {
   width: min(calc(100% - 48px), var(--container));
   margin: 0 auto;
-  padding: 146px 0 90px;
+  padding: 120px 0 72px;
 }
 
 .hero-copy {
-  max-width: 452px;
+  max-width: 560px;
 }
 
 .hero-copy h1 {
-  max-width: 426px;
+  max-width: 540px;
   text-transform: uppercase;
-  font-size: clamp(34px, 5.25vw, 59px);
+  font-size: clamp(54px, 5.4vw, 82px);
+  line-height: 1.05;
   letter-spacing: -0.03em;
 }
 
 .hero-copy p {
-  max-width: 344px;
-  font-size: 16px;
-  line-height: 1.86;
+  max-width: 460px;
+  font-size: 22px;
+  line-height: 1.75;
   color: rgba(247, 243, 234, 0.82);
 }
 
@@ -375,7 +388,7 @@ p {
   align-items: center;
   gap: 10px;
   margin-top: 24px;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 1.8px;
   text-transform: uppercase;
@@ -429,14 +442,25 @@ p {
 }
 
 #tratamientos h2 {
-  max-width: 430px;
-  font-size: clamp(30px, 3.6vw, 52px);
+  max-width: 720px;
+  font-size: clamp(50px, 4.8vw, 76px);
   line-height: 1.22;
 }
 
 #tratamientos p {
-  max-width: 395px;
-  font-size: 15px;
+  max-width: 720px;
+  font-size: 20px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: rgba(42, 36, 30, 0.86);
+}
+
+#tratamientos .container {
+  width: min(calc(100% - 32px), 1680px);
+}
+
+#rituales .container {
+  width: min(calc(100% - 48px), 1600px);
 }
 
 .centered-heading {
@@ -456,25 +480,26 @@ p {
 }
 
 .centered-heading h2 {
-  font-size: clamp(32px, 3.8vw, 50px);
+  font-size: clamp(54px, 5vw, 78px);
 }
 
 .ritual-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(5, minmax(220px, 1fr));
+  gap: 22px;
   align-items: stretch;
 }
 
 #rituales.section {
-  padding-top: 24px;
-  padding-bottom: 40px;
+  padding-top: 48px;
+  padding-bottom: 64px;
 }
 
 .ritual-card {
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-height: 720px;
   border: 1px solid var(--line);
   background: var(--ivory);
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
@@ -488,7 +513,9 @@ p {
 }
 
 .card-figure {
+  width: 100%;
   aspect-ratio: 4 / 3;
+  min-height: 310px;
   overflow: hidden;
 }
 
@@ -510,29 +537,30 @@ p {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: 17px 13px 13px;
+  padding: 30px 26px 26px;
 }
 
 .ritual-card h3 {
   font-family: "Cinzel", serif;
-  font-size: 13px;
-  line-height: 1.38;
+  font-size: 25px;
+  line-height: 1.32;
   letter-spacing: 0.01em;
   text-transform: uppercase;
 }
 
 .card-subtitle {
   margin: 8px 0 12px;
-  font-size: 9px;
+  font-size: 15px;
+  line-height: 1.45;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.7px;
   text-transform: uppercase;
   color: var(--olive-soft);
 }
 
 .card-body p {
-  font-size: 10.5px;
-  line-height: 1.78;
+  font-size: 20px;
+  line-height: 1.75;
 }
 
 .card-meta {
@@ -540,9 +568,9 @@ p {
   gap: 14px;
   margin-top: auto;
   padding: 14px 0 14px;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 600;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.9px;
   text-transform: uppercase;
   color: var(--text);
 }
@@ -560,8 +588,13 @@ p {
 
 .ritual-card .button,
 .grid-cta .button {
-  min-height: 40px;
-  padding: 11px 14px;
+  min-height: 48px;
+  padding: 14px 22px;
+  font-size: 15px;
+}
+
+.ritual-card .button {
+  font-size: 15px;
 }
 
 .ritual-card .button {
@@ -611,6 +644,11 @@ p {
   color: rgba(247, 243, 234, 0.78);
 }
 
+.final-cta__content p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
 .final-cta__content h2 {
   max-width: 320px;
   color: #f7f3ea;
@@ -650,15 +688,15 @@ p {
 .value-card h3 {
   margin-bottom: 8px;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .value-card p {
-  font-size: 12px;
-  line-height: 1.72;
+  font-size: 17px;
+  line-height: 1.75;
 }
 
 .cta-panel {
@@ -691,7 +729,8 @@ p {
 
 .cta-panel-copy p {
   max-width: 292px;
-  font-size: 14px;
+  font-size: 17px;
+  line-height: 1.8;
 }
 
 .cta-panel-image {
@@ -734,14 +773,18 @@ p {
 .footer-column p,
 .footer-column a {
   color: rgba(232, 224, 209, 0.74);
-  font-size: 13px;
-  line-height: 1.65;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.footer-bottom {
+  font-size: 15px;
 }
 
 .footer-column h3 {
   margin-bottom: 16px;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -843,7 +886,7 @@ p {
 }
 
 .about-copy {
-  max-width: 640px;
+  max-width: 720px;
 }
 
 .about-copy > h2 {
@@ -857,8 +900,10 @@ p {
 }
 
 .about-copy .stack-md p {
-  font-size: 14px;
-  line-height: 1.95;
+  font-size: 20px;
+  line-height: 1.85;
+  font-weight: 400;
+  color: rgba(42, 36, 30, 0.88);
 }
 
 .about-story-media,
@@ -937,9 +982,11 @@ p {
   line-height: 1.18;
 }
 
-.ritual-intro > .stack-lg p {
-  font-size: 14px;
-  line-height: 1.9;
+.ritual-intro p {
+  font-size: 20px;
+  line-height: 1.85;
+  font-weight: 400;
+  color: rgba(42, 36, 30, 0.88);
 }
 
 .ritual-intro-media {
@@ -1075,8 +1122,8 @@ p {
 }
 
 .benefit-card p {
-  font-size: 12px;
-  line-height: 1.72;
+  font-size: 17px;
+  line-height: 1.75;
 }
 
 .benefit-card svg {
@@ -1156,10 +1203,6 @@ p {
 @media (max-width: 1160px) {
   .ritual-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .ritual-card h3 {
-    font-size: 15px;
   }
 
   .footer-grid {
@@ -1276,12 +1319,14 @@ p {
   }
 
   .container,
+  #rituales .container,
+  #tratamientos .container,
   .hero-inner {
-    width: min(calc(100% - 40px), var(--container));
+    width: min(calc(100% - 32px), 100%);
   }
 
   .hero {
-    min-height: 640px;
+    min-height: 620px;
   }
 
   .hero-inner {
@@ -1294,6 +1339,11 @@ p {
 
   .brand img {
     width: 198px;
+  }
+
+  body,
+  p {
+    font-size: 18px;
   }
 
   .ritual-grid,
@@ -1347,8 +1397,12 @@ p {
     font-size: 16px;
   }
 
+  .card-figure {
+    min-height: 260px;
+  }
+
   .card-body p {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .contact-strip,
