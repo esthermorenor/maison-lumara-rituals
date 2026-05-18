@@ -233,7 +233,7 @@ p {
 }
 
 .brand img {
-  width: 280px;
+  width: 310px;
   max-width: 100%;
 }
 
@@ -322,8 +322,7 @@ p {
 
 .hero {
   position: relative;
-  min-height: 560px;
-  max-height: 620px;
+  min-height: 720px;
   display: flex;
   align-items: center;
   color: var(--ivory);
@@ -334,7 +333,12 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(31, 42, 32, 0.92) 0%, rgba(31, 42, 32, 0.62) 38%, rgba(31, 42, 32, 0.12) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(31, 42, 32, 0.78) 0%,
+    rgba(31, 42, 32, 0.42) 38%,
+    rgba(31, 42, 32, 0.08) 100%
+  );
   z-index: 1;
 }
 
@@ -361,7 +365,7 @@ p {
 .hero-inner {
   width: min(calc(100% - 48px), var(--container));
   margin: 0 auto;
-  padding: 120px 0 72px;
+  padding: 160px 0 110px;
 }
 
 .hero-copy {
@@ -371,15 +375,15 @@ p {
 .hero-copy h1 {
   max-width: 540px;
   text-transform: uppercase;
-  font-size: clamp(54px, 5.4vw, 82px);
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  font-size: clamp(64px, 5.8vw, 92px);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
 }
 
 .hero-copy p {
-  max-width: 460px;
-  font-size: 22px;
-  line-height: 1.75;
+  max-width: 520px;
+  font-size: 24px;
+  line-height: 1.7;
   color: rgba(247, 243, 234, 0.82);
 }
 
