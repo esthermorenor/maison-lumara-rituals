@@ -859,7 +859,7 @@ p {
   display: grid;
   grid-template-columns: 1.2fr 0.82fr 0.9fr 1fr;
   gap: 24px;
-  padding: 34px 0 16px;
+  padding: 30px 0 16px;
 }
 
 .footer-brand p,
@@ -891,7 +891,7 @@ p {
 }
 
 .footer-brand-logo {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .footer-logo {
@@ -909,29 +909,6 @@ p {
 
 .footer-brand .brand-tagline {
   font-size: 9px;
-}
-
-.socials {
-  display: flex;
-  gap: 10px;
-  margin-top: 12px;
-}
-
-.socials a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border: 1px solid rgba(199, 166, 106, 0.24);
-  color: var(--gold);
-  transition: border-color var(--transition), transform var(--transition);
-}
-
-.socials a:hover,
-.socials a:focus-visible {
-  border-color: var(--gold);
-  transform: translateY(-2px);
 }
 
 .footer-bottom {
