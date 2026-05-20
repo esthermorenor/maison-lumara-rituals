@@ -14,26 +14,27 @@
     <div class="page-shell">
       <header class="site-header" data-header>
         <div class="container header-bar">
-          <a class="brand" href="index.html" aria-label="Maison Lumara"><img class="brand-icon" src="assets/logo-icon-transparent.png" alt="" /><span class="brand-text"><span class="brand-name">Maison Lumara</span><span class="brand-tagline">Rituals of Wellness</span></span></a>
+          <a class="brand" href="index.html" aria-label="Maison Lumara"><img class="brand-icon" src="assets/logo-icon-transparent.png" alt="" /><span class="brand-text"><span class="brand-name">Maison Lumara</span><span class="brand-tagline" data-i18n="brand.tagline">Rituals of Wellness</span></span></a>
           <nav class="site-nav">
-            <a href="index.html">Inicio</a>
-            <a href="index.html#tratamientos">Tratamientos</a>
-            <a href="index.html#rituales" aria-current="page">Rituales</a>
-            <a href="about.html">Sobre nosotros</a>
-            <a href="index.html#contacto">Contacto</a>
+            <a href="index.html" data-i18n="nav.home">Inicio</a>
+            <a href="index.html#tratamientos" data-i18n="nav.treatments">Tratamientos</a>
+            <a href="index.html#rituales" aria-current="page" data-i18n="nav.rituals">Rituales</a>
+            <a href="about.html" data-i18n="nav.about">Sobre nosotros</a>
+            <a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
           </nav>
           <div class="header-actions">
-            <a class="button button-dark" href="index.html#contacto">Reserva tu momento</a>
+            <div class="language-switcher" aria-label="Language selector"><button class="lang-option" type="button" data-lang="es">ES</button><span aria-hidden="true">|</span><button class="lang-option" type="button" data-lang="en">EN</button></div>
+            <a class="button button-dark" href="index.html#contacto" data-i18n="button.reserve">Reserva tu momento</a>
             <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle><span></span></button>
           </div>
         </div>
         <div class="mobile-panel" data-mobile-panel>
-          <a href="index.html">Inicio</a>
-          <a href="index.html#tratamientos">Tratamientos</a>
-          <a href="index.html#rituales">Rituales</a>
-          <a href="about.html">Sobre nosotros</a>
-          <a href="index.html#contacto">Contacto</a>
-          <a class="button button-dark" href="index.html#contacto">Reserva tu momento</a>
+          <a href="index.html" data-i18n="nav.home">Inicio</a>
+          <a href="index.html#tratamientos" data-i18n="nav.treatments">Tratamientos</a>
+          <a href="index.html#rituales" data-i18n="nav.rituals">Rituales</a>
+          <a href="about.html" data-i18n="nav.about">Sobre nosotros</a>
+          <a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
+          <a class="button button-dark" href="index.html#contacto" data-i18n="button.reserve">Reserva tu momento</a>
         </div>
       </header>
 
@@ -41,8 +42,8 @@
         <section class="page-hero">
           <div class="page-hero-media"><img src="assets/lumara.jpg" alt="Ritual Lumara Maison Lumara" /></div>
           <div class="container reveal">
-            <h1>Ritual Lumara</h1>
-            <div class="breadcrumb">Inicio <span>/</span> Rituales <span>/</span> Ritual Lumara</div>
+            <h1 data-i18n="rituals.lumara.title">Ritual Lumara</h1>
+            <div class="breadcrumb"><span data-i18n="nav.home">Inicio</span> <span>/</span> <span data-i18n="nav.rituals">Rituales</span> <span>/</span> <span data-i18n="rituals.lumara.title">Ritual Lumara</span></div>
           </div>
         </section>
 
@@ -50,13 +51,13 @@
           <div class="container">
             <div class="ritual-intro">
               <div class="stack-lg reveal">
-                <div class="eyebrow">Signature</div>
+                <div class="eyebrow" data-i18n="rituals.lumara.eyebrow">Signature</div>
                 <div class="stack-md">
-                  <h2>Equilibrio · Energ&iacute;a · Conexi&oacute;n</h2>
-                  <p>
+                  <h2 data-i18n="rituals.lumara.subtitle">Equilibrio · Energ&iacute;a · Conexi&oacute;n</h2>
+                  <p data-i18n="rituals.lumara.detailText1">
                     Un ritual completo que representa la esencia de Maison Lumara. Combina t&eacute;cnicas manuales, piedras calientes y elementos arom&aacute;ticos para armonizar cuerpo, mente y energ&iacute;a en una experiencia profundamente restauradora.
                   </p>
-                  <p>
+                  <p data-i18n="rituals.lumara.detailText2">
                     Un viaje sensorial dise&ntilde;ado para reconectar con el equilibrio natural y alcanzar un estado de calma profunda.
                   </p>
                 </div>
@@ -69,34 +70,34 @@
             <div class="ritual-layout">
               <div class="stack-lg">
                 <section class="ritual-panel reveal">
-                  <div class="eyebrow">Qu&eacute; incluye</div>
+                  <div class="eyebrow" data-i18n="ritual.detail.includes">Qu&eacute; incluye</div>
                   <ul class="ritual-bullets">
-                    <li>Bienvenida y diagn&oacute;stico personalizado</li>
-                    <li>Masaje relajante con aceites arom&aacute;ticos</li>
-                    <li>Piedras calientes para liberar tensiones profundas</li>
-                    <li>T&eacute;cnicas manuales exclusivas Maison Lumara</li>
-                    <li>Ritual de armonizaci&oacute;n final</li>
+                    <li data-i18n="rituals.lumara.includes.1">Bienvenida y diagn&oacute;stico personalizado</li>
+                    <li data-i18n="rituals.lumara.includes.2">Masaje relajante con aceites arom&aacute;ticos</li>
+                    <li data-i18n="rituals.lumara.includes.3">Piedras calientes para liberar tensiones profundas</li>
+                    <li data-i18n="rituals.lumara.includes.4">T&eacute;cnicas manuales exclusivas Maison Lumara</li>
+                    <li data-i18n="rituals.lumara.includes.5">Ritual de armonizaci&oacute;n final</li>
                   </ul>
                 </section>
 
                 <section class="reveal">
-                  <div class="eyebrow">Beneficios</div>
+                  <div class="eyebrow" data-i18n="ritual.detail.benefits">Beneficios</div>
                   <div class="benefits-grid">
-                    <article class="benefit-card"><h3>Equilibrio</h3><p>Armoniza cuerpo, mente y energ&iacute;a.</p></article>
-                    <article class="benefit-card"><h3>Energ&iacute;a</h3><p>Restaura vitalidad y bienestar.</p></article>
-                    <article class="benefit-card"><h3>Conexi&oacute;n</h3><p>Reconecta contigo misma en profundidad.</p></article>
-                    <article class="benefit-card"><h3>Armon&iacute;a</h3><p>Profunda sensaci&oacute;n de calma y paz.</p></article>
+                    <article class="benefit-card"><h3 data-i18n="rituals.lumara.benefits.1.title">Equilibrio</h3><p data-i18n="rituals.lumara.benefits.1.text">Armoniza cuerpo, mente y energ&iacute;a.</p></article>
+                    <article class="benefit-card"><h3 data-i18n="rituals.lumara.benefits.2.title">Energ&iacute;a</h3><p data-i18n="rituals.lumara.benefits.2.text">Restaura vitalidad y bienestar.</p></article>
+                    <article class="benefit-card"><h3 data-i18n="rituals.lumara.benefits.3.title">Conexi&oacute;n</h3><p data-i18n="rituals.lumara.benefits.3.text">Reconecta contigo misma en profundidad.</p></article>
+                    <article class="benefit-card"><h3 data-i18n="rituals.lumara.benefits.4.title">Armon&iacute;a</h3><p data-i18n="rituals.lumara.benefits.4.text">Profunda sensaci&oacute;n de calma y paz.</p></article>
                   </div>
                 </section>
 
                 <section class="contact-strip reveal">
                   <div>
-                    <h3>&iquest;Tienes dudas?</h3>
-                    <p>Estamos aqu&iacute; para ayudarte</p>
+                    <h3 data-i18n="ritual.contact.title">&iquest;Tienes dudas?</h3>
+                    <p data-i18n="ritual.contact.text">Estamos aqu&iacute; para ayudarte</p>
                   </div>
                   <div class="contact-actions">
-                    <a class="button button-dark" href="mailto:maisonlumara@gmail.com">Contactar</a>
-                    <a class="button button-dark" href="index.html#rituales">Ver rituales</a>
+                    <a class="button button-dark" href="mailto:maisonlumara@gmail.com" data-i18n="button.contact">Contactar</a>
+                    <a class="button button-dark" href="index.html#rituales" data-i18n="button.viewRituals">Ver rituales</a>
                   </div>
                 </section>
               </div>
@@ -104,15 +105,15 @@
               <aside class="ritual-aside reveal">
                 <div class="ritual-aside-card">
                   <div class="ritual-stat">
-                    <article><strong>Duraci&oacute;n</strong><span>60 minutos</span></article>
-                    <article><strong>Precio</strong><span>60 €</span></article>
+                    <article><strong data-i18n="ritual.detail.duration">Duraci&oacute;n</strong><span data-i18n="ritual.detail.durationValue">60 minutos</span></article>
+                    <article><strong data-i18n="ritual.detail.price">Precio</strong><span data-i18n="ritual.detail.priceValue">70 €</span></article>
                   </div>
                 </div>
                 <div class="ritual-aside-card">
                   <div class="stack-md">
-                    <h3>Reserva este ritual</h3>
-                    <p>Escr&iacute;benos y prepararemos tu experiencia Maison Lumara.</p>
-                    <a class="button button-solid" href="mailto:maisonlumara@gmail.com">Reservar este ritual</a>
+                    <h3 data-i18n="ritual.detail.reserveTitle">Reserva este ritual</h3>
+                    <p data-i18n="ritual.detail.reserveTextLumara">Escr&iacute;benos y prepararemos tu experiencia Maison Lumara.</p>
+                    <a class="button button-solid" href="mailto:maisonlumara@gmail.com" data-i18n="button.reserveThisRitual">Reservar este ritual</a>
                   </div>
                 </div>
               </aside>
@@ -124,12 +125,12 @@
       <footer class="site-footer">
         <div class="container">
           <div class="footer-grid">
-            <div class="footer-brand"><a class="footer-brand-logo" href="index.html" aria-label="Maison Lumara"><img class="brand-icon footer-logo" src="assets/logo-icon-transparent.png" alt="" /><span class="brand-text"><span class="brand-name">Maison Lumara</span><span class="brand-tagline">Rituals of Wellness</span></span></a><p>Where Light Becomes Calm</p></div>
-            <div class="footer-column"><h3>Navegaci&oacute;n</h3><div class="footer-links"><a href="index.html">Inicio</a><a href="index.html#tratamientos">Tratamientos</a><a href="index.html#rituales">Rituales</a><a href="about.html">Sobre nosotros</a><a href="index.html#contacto">Contacto</a></div></div>
-            <div class="footer-column"><h3>Rituales</h3><div class="footer-links"><a href="ritual-ayurveda.html">Ritual Ayurveda</a><a href="ritual-oceanico.html">Ritual Oce&aacute;nico</a><a href="ritual-volcanico.html">Ritual Volc&aacute;nico</a><a href="ritual-aromatico.html">Ritual Arom&aacute;tico</a><a href="ritual-lumara.html">Ritual Lumara</a></div></div>
-            <div class="footer-column"><h3>Contacto</h3><div class="footer-meta"><p>+34 600 123 456</p><p>maisonlumara@gmail.com</p><p>www.maisonlumara.com</p><p>Richmond</p><p>Lunes a Domingo 10:00 – 20:00</p></div></div>
+            <div class="footer-brand"><a class="footer-brand-logo" href="index.html" aria-label="Maison Lumara"><img class="brand-icon footer-logo" src="assets/logo-icon-transparent.png" alt="" /><span class="brand-text"><span class="brand-name">Maison Lumara</span><span class="brand-tagline" data-i18n="brand.tagline">Rituals of Wellness</span></span></a><p data-i18n="brand.emotional">Where Light Becomes Calm</p></div>
+            <div class="footer-column"><h3 data-i18n="footer.navigation">Navegaci&oacute;n</h3><div class="footer-links"><a href="index.html" data-i18n="nav.home">Inicio</a><a href="index.html#tratamientos" data-i18n="nav.treatments">Tratamientos</a><a href="index.html#rituales" data-i18n="nav.rituals">Rituales</a><a href="about.html" data-i18n="nav.about">Sobre nosotros</a><a href="index.html#contacto" data-i18n="nav.contact">Contacto</a></div></div>
+            <div class="footer-column"><h3 data-i18n="footer.rituals">Rituales</h3><div class="footer-links"><a href="ritual-ayurveda.html" data-i18n="rituals.ayurveda.title">Ritual Ayurveda</a><a href="ritual-oceanico.html" data-i18n="rituals.oceanic.title">Ritual Oce&aacute;nico</a><a href="ritual-volcanico.html" data-i18n="rituals.volcanic.title">Ritual Volc&aacute;nico</a><a href="ritual-aromatico.html" data-i18n="rituals.aromatic.title">Ritual Arom&aacute;tico</a><a href="ritual-lumara.html" data-i18n="rituals.lumara.title">Ritual Lumara</a></div></div>
+            <div class="footer-column"><h3 data-i18n="nav.contact">Contacto</h3><div class="footer-meta"><p>+34 600 123 456</p><p>maisonlumara@gmail.com</p><p>www.maisonlumara.com</p><p>Richmond</p><p data-i18n="footer.schedule">Lunes a Domingo 10:00 – 20:00</p></div></div>
           </div>
-          <div class="footer-bottom"><span>&copy; 2026 Maison Lumara. Todos los derechos reservados.</span><div class="footer-bottom-links"><a href="#">Pol&iacute;tica de privacidad</a><a href="#">Aviso legal</a></div></div>
+          <div class="footer-bottom"><span data-i18n="footer.rights">&copy; 2026 Maison Lumara. Todos los derechos reservados.</span><div class="footer-bottom-links"><a href="#" data-i18n="footer.privacy">Pol&iacute;tica de privacidad</a><a href="#" data-i18n="footer.legal">Aviso legal</a></div></div>
         </div>
       </footer>
     </div>

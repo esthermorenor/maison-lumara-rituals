@@ -18,60 +18,65 @@
             <img class="brand-icon" src="assets/logo-icon-transparent.png" alt="" />
             <span class="brand-text">
               <span class="brand-name">Maison Lumara</span>
-              <span class="brand-tagline">Rituals of Wellness</span>
+              <span class="brand-tagline" data-i18n="brand.tagline">Rituals of Wellness</span>
             </span>
           </a>
           <nav class="site-nav" aria-label="Principal">
-            <a href="index.html" aria-current="page">Inicio</a>
-            <a href="#tratamientos">Tratamientos</a>
-            <a href="#rituales">Rituales</a>
-            <a href="about.html">Sobre nosotros</a>
-            <a href="#contacto">Contacto</a>
+            <a href="index.html" aria-current="page" data-i18n="nav.home">Inicio</a>
+            <a href="#tratamientos" data-i18n="nav.treatments">Tratamientos</a>
+            <a href="#rituales" data-i18n="nav.rituals">Rituales</a>
+            <a href="about.html" data-i18n="nav.about">Sobre nosotros</a>
+            <a href="#contacto" data-i18n="nav.contact">Contacto</a>
           </nav>
           <div class="header-actions">
-            <a class="button button-dark" href="#contacto">Reserva tu momento</a>
+            <div class="language-switcher" aria-label="Language selector">
+              <button class="lang-option" type="button" data-lang="es">ES</button>
+              <span aria-hidden="true">|</span>
+              <button class="lang-option" type="button" data-lang="en">EN</button>
+            </div>
+            <a class="button button-dark" href="#contacto" data-i18n="button.reserve">Reserva tu momento</a>
             <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle>
               <span></span>
             </button>
           </div>
         </div>
         <div class="mobile-panel" data-mobile-panel>
-          <a href="index.html">Inicio</a>
-          <a href="#tratamientos">Tratamientos</a>
-          <a href="#rituales">Rituales</a>
-          <a href="about.html">Sobre nosotros</a>
-          <a href="#contacto">Contacto</a>
-          <a class="button button-dark" href="#contacto">Reserva tu momento</a>
+          <a href="index.html" data-i18n="nav.home">Inicio</a>
+          <a href="#tratamientos" data-i18n="nav.treatments">Tratamientos</a>
+          <a href="#rituales" data-i18n="nav.rituals">Rituales</a>
+          <a href="about.html" data-i18n="nav.about">Sobre nosotros</a>
+          <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+          <a class="button button-dark" href="#contacto" data-i18n="button.reserve">Reserva tu momento</a>
         </div>
       </header>
 
       <main>
         <section class="hero">
           <div class="hero-copy reveal">
-            <h1>Rituales que transforman</h1>
-            <p>
+            <h1 data-i18n="hero.title">Rituales que transforman</h1>
+            <p data-i18n="hero.text">
               Masajes y tratamientos diseñados para restaurar tu cuerpo y belleza natural.
             </p>
-            <a class="button" href="#contacto">Reserva tu momento</a>
-            <div class="hero-tagline">Where Light Becomes Calm</div>
+            <a class="button" href="#contacto" data-i18n="button.reserve">Reserva tu momento</a>
+            <div class="hero-tagline" data-i18n="brand.emotional">Where Light Becomes Calm</div>
           </div>
           <div class="hero-media">
-            <img src="assets/hero-image-only-hd.png" alt="Rituales Maison Lumara" />
+            <img src="assets/hero.jpg" alt="Rituales Maison Lumara" />
           </div>
         </section>
 
         <section class="section section-ivory" id="tratamientos">
           <div class="container feature-split">
             <div class="stack-lg reveal">
-              <div class="eyebrow">Bienvenido a Maison Lumara</div>
+              <div class="eyebrow" data-i18n="home.welcome.eyebrow">Bienvenido a Maison Lumara</div>
               <div class="stack-md">
-                <h2>Un espacio de bienestar donde cada detalle est&aacute; pensado para ti</h2>
-                <p>
+                <h2 data-i18n="home.welcome.title">Un espacio de bienestar donde cada detalle est&aacute; pensado para ti</h2>
+                <p data-i18n="home.welcome.text">
                   Inspirados en antiguas tradiciones de bienestar y belleza, nuestros rituales combinan t&eacute;cnicas manuales, aceites arom&aacute;ticos y elementos naturales para ofrecerte una experiencia &uacute;nica de relajaci&oacute;n y equilibrio.
                 </p>
               </div>
               <div>
-                <a class="button" href="about.html">Conoce m&aacute;s</a>
+                <a class="button" href="about.html" data-i18n="button.learnMore">Conoce m&aacute;s</a>
               </div>
             </div>
             <figure class="feature-split-figure reveal">
@@ -83,8 +88,8 @@
         <section class="section section-ivory" id="rituales">
           <div class="container">
             <div class="centered-heading reveal">
-              <div class="eyebrow" style="justify-content:center">Nuestros</div>
-              <h2>Rituales Signature</h2>
+              <div class="eyebrow" style="justify-content:center" data-i18n="home.signature.eyebrow">Nuestros</div>
+              <h2 data-i18n="home.signature.title">Rituales Signature</h2>
             </div>
 
             <div class="ritual-grid">
@@ -93,13 +98,13 @@
                   <img src="assets/ayurveda.jpg" alt="Ritual Ayurveda" loading="lazy" />
                 </figure>
                 <div class="card-body">
-                  <h3>Ritual Ayurveda</h3>
-                  <div class="card-subtitle">Armon&iacute;a · Energ&iacute;a · Tradici&oacute;n</div>
-                  <p>
+                  <h3 data-i18n="rituals.ayurveda.title">Ritual Ayurveda</h3>
+                  <div class="card-subtitle" data-i18n="rituals.ayurveda.subtitle">Armon&iacute;a · Energ&iacute;a · Tradici&oacute;n</div>
+                  <p data-i18n="rituals.ayurveda.cardText">
                     Inspirado en la sabidur&iacute;a milenaria Ayurveda, este ritual utiliza aceites arom&aacute;ticos y movimientos envolventes para equilibrar cuerpo y mente.
                   </p>
-                  <div class="card-meta"><span>60 €</span><span>60 MIN</span></div>
-                  <a class="button" href="ritual-ayurveda.html">Descubrir ritual</a>
+                  <div class="card-meta"><span data-i18n="price.ritual">70 €</span><span>60 MIN</span></div>
+                  <a class="button" href="ritual-ayurveda.html" data-i18n="button.discoverRitual">Descubrir ritual</a>
                 </div>
               </article>
 
@@ -108,13 +113,13 @@
                   <img src="assets/oceanico.jpg" alt="Ritual Oceánico" loading="lazy" />
                 </figure>
                 <div class="card-body">
-                  <h3>Ritual Oce&aacute;nico</h3>
-                  <div class="card-subtitle">Fluidez · Serenidad · Relajaci&oacute;n profunda</div>
-                  <p>
+                  <h3 data-i18n="rituals.oceanic.title">Ritual Oce&aacute;nico</h3>
+                  <div class="card-subtitle" data-i18n="rituals.oceanic.subtitle">Fluidez · Serenidad · Relajaci&oacute;n profunda</div>
+                  <p data-i18n="rituals.oceanic.cardText">
                     Conchas marinas calientes que se deslizan sobre el cuerpo, liberando tensiones y transport&aacute;ndote a un estado de serenidad profunda.
                   </p>
-                  <div class="card-meta"><span>60 €</span><span>60 MIN</span></div>
-                  <a class="button" href="ritual-oceanico.html">Descubrir ritual</a>
+                  <div class="card-meta"><span data-i18n="price.ritual">70 €</span><span>60 MIN</span></div>
+                  <a class="button" href="ritual-oceanico.html" data-i18n="button.discoverRitual">Descubrir ritual</a>
                 </div>
               </article>
 
@@ -123,13 +128,13 @@
                   <img src="assets/volcanico.jpg" alt="Ritual Volcánico" loading="lazy" />
                 </figure>
                 <div class="card-body">
-                  <h3>Ritual Volc&aacute;nico</h3>
-                  <div class="card-subtitle">Calor · Liberaci&oacute;n · Profundidad</div>
-                  <p>
+                  <h3 data-i18n="rituals.volcanic.title">Ritual Volc&aacute;nico</h3>
+                  <div class="card-subtitle" data-i18n="rituals.volcanic.subtitle">Calor · Liberaci&oacute;n · Profundidad</div>
+                  <p data-i18n="rituals.volcanic.cardText">
                     Piedras volc&aacute;nicas calientes que relajan la musculatura, mejoran la circulaci&oacute;n y liberan tensiones acumuladas.
                   </p>
-                  <div class="card-meta"><span>60 €</span><span>60 MIN</span></div>
-                  <a class="button" href="ritual-volcanico.html">Descubrir ritual</a>
+                  <div class="card-meta"><span data-i18n="price.ritual">70 €</span><span>60 MIN</span></div>
+                  <a class="button" href="ritual-volcanico.html" data-i18n="button.discoverRitual">Descubrir ritual</a>
                 </div>
               </article>
 
@@ -138,13 +143,13 @@
                   <img src="assets/aromatico.jpg" alt="Ritual Aromático" loading="lazy" />
                 </figure>
                 <div class="card-body">
-                  <h3>Ritual Arom&aacute;tico</h3>
-                  <div class="card-subtitle">Sensorial · Ex&oacute;tico · Calma</div>
-                  <p>
+                  <h3 data-i18n="rituals.aromatic.title">Ritual Arom&aacute;tico</h3>
+                  <div class="card-subtitle" data-i18n="rituals.aromatic.subtitle">Sensorial · Ex&oacute;tico · Calma</div>
+                  <p data-i18n="rituals.aromatic.cardText">
                     Pindas calientes de hierbas y especias que, junto con aceites arom&aacute;ticos, relajan el cuerpo y los sentidos en profundidad.
                   </p>
-                  <div class="card-meta"><span>60 €</span><span>60 MIN</span></div>
-                  <a class="button" href="ritual-aromatico.html">Descubrir ritual</a>
+                  <div class="card-meta"><span data-i18n="price.ritual">70 €</span><span>60 MIN</span></div>
+                  <a class="button" href="ritual-aromatico.html" data-i18n="button.discoverRitual">Descubrir ritual</a>
                 </div>
               </article>
 
@@ -153,19 +158,19 @@
                   <img src="assets/lumara.jpg" alt="Ritual Lumara" loading="lazy" />
                 </figure>
                 <div class="card-body">
-                  <h3>Ritual Lumara</h3>
-                  <div class="card-subtitle">Equilibrio · Energ&iacute;a · Conexi&oacute;n</div>
-                  <p>
+                  <h3 data-i18n="rituals.lumara.title">Ritual Lumara</h3>
+                  <div class="card-subtitle" data-i18n="rituals.lumara.subtitle">Equilibrio · Energ&iacute;a · Conexi&oacute;n</div>
+                  <p data-i18n="rituals.lumara.cardText">
                     Un ritual completo que combina t&eacute;cnicas exclusivas para reconectar cuerpo, mente y esp&iacute;ritu.
                   </p>
-                  <div class="card-meta"><span>60 €</span><span>60 MIN</span></div>
-                  <a class="button" href="ritual-lumara.html">Descubrir ritual</a>
+                  <div class="card-meta"><span data-i18n="price.ritual">70 €</span><span>60 MIN</span></div>
+                  <a class="button" href="ritual-lumara.html" data-i18n="button.discoverRitual">Descubrir ritual</a>
                 </div>
               </article>
             </div>
 
             <div class="grid-cta reveal">
-              <a class="button" href="ritual-lumara.html">Ver todos los rituales</a>
+              <a class="button" href="ritual-lumara.html" data-i18n="button.viewAllRituals">Ver todos los rituales</a>
             </div>
           </div>
         </section>
@@ -177,29 +182,29 @@
                 <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.7">
                   <path d="M32 12c6 8 9 16 9 24 0 5-3 10-9 16-6-6-9-11-9-16 0-8 3-16 9-24Z"/><path d="M14 34c6-4 12-6 18-6 6 0 12 2 18 6-6 10-18 18-18 18S20 44 14 34Z"/>
                 </svg>
-                <h3>Bienestar hol&iacute;stico</h3>
-                <p>Cuerpo, mente y esp&iacute;ritu en armon&iacute;a.</p>
+                <h3 data-i18n="values.holistic.title">Bienestar hol&iacute;stico</h3>
+                <p data-i18n="values.holistic.text">Cuerpo, mente y esp&iacute;ritu en armon&iacute;a.</p>
               </article>
               <article class="value-card reveal">
                 <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.7">
                   <path d="M18 42c0-16 10-26 28-30-2 18-12 28-28 30Z"/><path d="M20 44c8-4 16-12 24-24"/>
                 </svg>
-                <h3>Ingredientes naturales</h3>
-                <p>Utilizamos productos de la m&aacute;s alta calidad y origen natural.</p>
+                <h3 data-i18n="values.natural.title">Ingredientes naturales</h3>
+                <p data-i18n="values.natural.text">Utilizamos productos de la m&aacute;s alta calidad y origen natural.</p>
               </article>
               <article class="value-card reveal">
                 <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.7">
                   <circle cx="32" cy="20" r="8"/><path d="M18 50c0-8 6-14 14-14s14 6 14 14"/><path d="M12 28c4 0 8 4 8 8v8"/><path d="M52 28c-4 0-8 4-8 8v8"/>
                 </svg>
-                <h3>Rituales personalizados</h3>
-                <p>Experiencias adaptadas a tus necesidades y momento.</p>
+                <h3 data-i18n="values.personalized.title">Rituales personalizados</h3>
+                <p data-i18n="values.personalized.text">Experiencias adaptadas a tus necesidades y momento.</p>
               </article>
               <article class="value-card reveal">
                 <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.7">
                   <path d="M12 24c8 6 16 6 24 0s16-6 16 0"/><path d="M12 36c8 6 16 6 24 0s16-6 16 0"/>
                 </svg>
-                <h3>Equilibrio y armon&iacute;a</h3>
-                <p>Un espacio para desconectar y reconectar contigo.</p>
+                <h3 data-i18n="values.balance.title">Equilibrio y armon&iacute;a</h3>
+                <p data-i18n="values.balance.text">Un espacio para desconectar y reconectar contigo.</p>
               </article>
             </div>
           </div>
@@ -208,13 +213,13 @@
         <section class="section section-ivory" id="contacto">
           <div class="final-cta reveal">
             <div class="final-cta__content stack-lg">
-              <div class="stack-md">
-                <div class="eyebrow">Maison Lumara</div>
-                <h2>Tu momento de calma empieza aqu&iacute;</h2>
-                <p>Reserva tu ritual y d&eacute;jate guiar por la luz hacia el bienestar.</p>
+                <div class="stack-md">
+                <div class="eyebrow" data-i18n="cta.eyebrow">Maison Lumara</div>
+                <h2 data-i18n="cta.title">Tu momento de calma empieza aqu&iacute;</h2>
+                <p data-i18n="cta.text">Reserva tu ritual y d&eacute;jate guiar por la luz hacia el bienestar.</p>
               </div>
               <div>
-                <a class="button button-dark" href="mailto:maisonlumara@gmail.com">Reserva tu momento</a>
+                <a class="button button-dark" href="mailto:maisonlumara@gmail.com" data-i18n="button.reserve">Reserva tu momento</a>
               </div>
             </div>
             <figure class="final-cta__image">
@@ -232,47 +237,47 @@
                 <img class="brand-icon footer-logo" src="assets/logo-icon-transparent.png" alt="" />
                 <span class="brand-text">
                   <span class="brand-name">Maison Lumara</span>
-                  <span class="brand-tagline">Rituals of Wellness</span>
+                  <span class="brand-tagline" data-i18n="brand.tagline">Rituals of Wellness</span>
                 </span>
               </a>
-              <p>Where Light Becomes Calm</p>
+              <p data-i18n="brand.emotional">Where Light Becomes Calm</p>
             </div>
             <div class="footer-column">
-              <h3>Navegaci&oacute;n</h3>
+              <h3 data-i18n="footer.navigation">Navegaci&oacute;n</h3>
               <div class="footer-links">
-                <a href="index.html">Inicio</a>
-                <a href="#tratamientos">Tratamientos</a>
-                <a href="#rituales">Rituales</a>
-                <a href="about.html">Sobre nosotros</a>
-                <a href="#contacto">Contacto</a>
+                <a href="index.html" data-i18n="nav.home">Inicio</a>
+                <a href="#tratamientos" data-i18n="nav.treatments">Tratamientos</a>
+                <a href="#rituales" data-i18n="nav.rituals">Rituales</a>
+                <a href="about.html" data-i18n="nav.about">Sobre nosotros</a>
+                <a href="#contacto" data-i18n="nav.contact">Contacto</a>
               </div>
             </div>
             <div class="footer-column">
-              <h3>Rituales</h3>
+              <h3 data-i18n="footer.rituals">Rituales</h3>
               <div class="footer-links">
-                <a href="ritual-ayurveda.html">Ritual Ayurveda</a>
-                <a href="ritual-oceanico.html">Ritual Oce&aacute;nico</a>
-                <a href="ritual-volcanico.html">Ritual Volc&aacute;nico</a>
-                <a href="ritual-aromatico.html">Ritual Arom&aacute;tico</a>
-                <a href="ritual-lumara.html">Ritual Lumara</a>
+                <a href="ritual-ayurveda.html" data-i18n="rituals.ayurveda.title">Ritual Ayurveda</a>
+                <a href="ritual-oceanico.html" data-i18n="rituals.oceanic.title">Ritual Oce&aacute;nico</a>
+                <a href="ritual-volcanico.html" data-i18n="rituals.volcanic.title">Ritual Volc&aacute;nico</a>
+                <a href="ritual-aromatico.html" data-i18n="rituals.aromatic.title">Ritual Arom&aacute;tico</a>
+                <a href="ritual-lumara.html" data-i18n="rituals.lumara.title">Ritual Lumara</a>
               </div>
             </div>
             <div class="footer-column">
-              <h3>Contacto</h3>
+              <h3 data-i18n="nav.contact">Contacto</h3>
               <div class="footer-meta">
                 <p>+34 600 123 456</p>
                 <p>maisonlumara@gmail.com</p>
                 <p>www.maisonlumara.com</p>
                 <p>Richmond</p>
-                <p>Lunes a Domingo 10:00 – 20:00</p>
+                <p data-i18n="footer.schedule">Lunes a Domingo 10:00 – 20:00</p>
               </div>
             </div>
           </div>
           <div class="footer-bottom">
-            <span>&copy; 2026 Maison Lumara. Todos los derechos reservados.</span>
+            <span data-i18n="footer.rights">&copy; 2026 Maison Lumara. Todos los derechos reservados.</span>
             <div class="footer-bottom-links">
-              <a href="#">Pol&iacute;tica de privacidad</a>
-              <a href="#">Aviso legal</a>
+              <a href="#" data-i18n="footer.privacy">Pol&iacute;tica de privacidad</a>
+              <a href="#" data-i18n="footer.legal">Aviso legal</a>
             </div>
           </div>
         </div>
